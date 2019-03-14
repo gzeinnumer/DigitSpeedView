@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.github.capur16.digitspeedviewlib.DigitSpeedView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/digitView"
+        app:backgroundDrawable="@drawable/my_background"
+        app:speed="0"
+        app:showUnit="true"
+        app:speedTextColor="@color/colorAccent"
+        app:speedTextSize="31sp"
+        app:unitTextColor="@color/colorAccent"
+        app:unitTextSize="5sp"
+        app:unit="Zein"/>
+
+    <SeekBar
+        android:id="@+id/seek"
+        android:max="250"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
